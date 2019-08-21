@@ -87,18 +87,20 @@ interests.addEventListener("click", event => {
 interests.addEventListener("click", event => {
     if (event.target.id.startsWith("deleteButton")) {
       const deleteID = event.target.id.split("--")[1];
-      deleteEntry(deleteID)
-      .then(() => {
-        postsContainer.innerHTML = "";
-        dataInterest.interestFetch().then(interests => {
-            for (const interest of interests) {
-              const postedInterestConverted = factoryInterest.factoryPostedInterest(
-                interest
-              );
-              domInterest.renderToPostsContainer(postedInterestConverted);
-            }
-          });
-      });
+      if (confirm("Are you sure you want to delete this point of interest?")) {
+        deleteEntry(deleteID)
+        .then(() => {
+            postsContainer.innerHTML = "";
+            dataInterest.interestFetch().then(interests => {
+                for (const interest of interests) {
+                const postedInterestConverted = factoryInterest.factoryPostedInterest(
+                    interest
+                );
+                domInterest.renderToPostsContainer(postedInterestConverted);
+                }
+            });
+        });
+      } else {}
     }
   });
 
