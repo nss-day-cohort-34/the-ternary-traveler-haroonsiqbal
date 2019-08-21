@@ -1,0 +1,29 @@
+{
+  "places": [],
+  "interests": [
+    {
+      "name": "aa",
+      "description": "aa",
+      "cost": "aa",
+      "review": "aa",
+      "location": {
+        "0": {},
+        "1": {},
+        "2": {}
+      },
+      "id": 1
+    },
+    {
+      "name": "bb",
+      "description": "bb",
+      "cost": "bb",
+      "review": "bb",
+      "location": {
+        "0": {},
+        "1": {},
+        "2": {}
+      },
+      "id": 2
+    }
+  ]
+}
