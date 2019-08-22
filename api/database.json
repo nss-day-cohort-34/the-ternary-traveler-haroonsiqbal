@@ -2,16 +2,28 @@
   "places": [],
   "interests": [
     {
-      "name": "aa",
-      "description": "aa",
-      "cost": "aa",
-      "review": "aa",
-      "location": {
-        "0": {},
-        "1": {},
-        "2": {}
-      },
+      "name": "Il Duomo",
+      "description": "A cathedral in Florence",
+      "cost": "€25.00",
+      "review": "It was great!",
+      "location": "Italy",
       "id": 1
+    },
+    {
+      "name": "The Alps",
+      "description": "A mountain range",
+      "cost": "€40.00",
+      "review": "Great for skiing!",
+      "location": "Switzerland",
+      "id": 2
+    },
+    {
+      "name": "Tour De France",
+      "description": "A bicycle race across the country",
+      "cost": "€80.00",
+      "review": "It was exciting!",
+      "location": "France",
+      "id": 3
     }
   ]
 }

@@ -4,7 +4,7 @@ const factoryInterest = {
         return `
         <input type="hidden" id="editID" value="">
         <div>
-        <h2>Points of Interest</h2>
+        <h1>The Ternary Traveler</h1>
         </div>
         <div id="interestsContainer">
         </div>
@@ -15,16 +15,16 @@ const factoryInterest = {
 
     factoryNewInterest() {
         return `
-        <fieldset>
-            <legend>Add or Modify Point of Interest</legend>
+        <fieldset id="forms">
+            <legend id="legend">Add or Modify Points of Interest</legend>
             <label for="interestName">Name</label>
-            <input class="interestNameInput" type="text" name="interestName" id="interestName">
+            <input class="interestNameInput" type="text" name="interestName" id="interestName"><br>
             <label for="interestDescription">Description</label>
-            <input class="interestDescriptionInput" type="text" name="interestDescription" id="interestDescription">
+            <input class="interestDescriptionInput" type="text" name="interestDescription" id="interestDescription"><br>
             <label for="interestCost">Cost</label>
-            <input class="interestCostInput" type="text" name="interestCost" id="interestCost">
+            <input class="interestCostInput" type="text" name="interestCost" id="interestCost"><br>
             <label for="interestReview">Review</label>
-            <input class="interestReviewInput" type="text" name="interestReview" id="interestReview">
+            <input class="interestReviewInput" type="text" name="interestReview" id="interestReview"><br>
             <select class="interestLocationInput name="interestLocation id="interestLocation">
                 <option value="Italy">Italy</option>
                 <option value="Switzerland">Switzerland</option>
@@ -49,6 +49,7 @@ const factoryInterest = {
 
     factoryPostedInterest(object) {
         return `
+        <div id="post">
         <h4>Name: ${object.name}</h4>
         <h5>Description: ${object.description}</h5>
         <h5>Cost: ${object.cost}</h5>
@@ -59,6 +60,7 @@ const factoryInterest = {
         </div>
         <div>
         <button class="button2" id="deleteButton--${object.id}">Delete</button>
+        </div>
         </div>
         `
     }

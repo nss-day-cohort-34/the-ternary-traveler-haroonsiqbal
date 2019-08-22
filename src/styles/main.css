@@ -1,0 +1,47 @@
+body {
+    background-color: #F27E63;
+}
+
+#postsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    font-family: 'Livvic', sans-serif;
+}
+
+#post {
+    flex-basis: 50%;
+    background-color: #fafafa;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10%;
+    min-width: 300px;
+    max-width: 300px;
+}
+
+#post:hover {
+    background-color: #c2e8ff;
+}
+
+#interestsContainer {
+    margin: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    max-width: 500px;
+
+}
+
+#forms {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Abril Fatface', cursive;
+    margin-left: 20px;
+}
+
+#legend {
+    font-size: 1.3em;
+}
