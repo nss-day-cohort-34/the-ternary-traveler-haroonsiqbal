@@ -1,5 +1,5 @@
 body {
-    background-color: #F27E63;
+    background-color: #f3826f
 }
 
 #postsContainer {
@@ -21,7 +21,8 @@ body {
 }
 
 #post:hover {
-    background-color: #c2e8ff;
+    background-color: #e0e5ff;
+    border: 2px dashed #2d3561;
 }
 
 #interestsContainer {
@@ -45,3 +46,33 @@ h1 {
 #legend {
     font-size: 1.3em;
 }
+
+#saveInterestButton {
+    background-color: #2d3561;
+    color: #fafafa;
+    font-family: 'IBM Plex Sans', sans-serif;
+    width: 80px;
+    height: 30px;
+    font-size: .9em;
+    margin-top: 5px;
+}
+
+#saveInterestButton:hover {
+    background-color: #0f48a3
+}
+
+
+.button2 {
+    background-color: #2d3561;
+    color: #fafafa;
+    font-family: 'Livvic', sans-serif;
+}
+
+.button2:hover {
+    background-color: #0f48a3;
+}
+
+p {
+    line-height: 10px;
+}
+

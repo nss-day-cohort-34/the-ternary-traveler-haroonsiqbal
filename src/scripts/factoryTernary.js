@@ -24,7 +24,8 @@ const factoryInterest = {
             <label for="interestCost">Cost</label>
             <input class="interestCostInput" type="text" name="interestCost" id="interestCost"><br>
             <label for="interestReview">Review</label>
-            <input class="interestReviewInput" type="text" name="interestReview" id="interestReview"><br>
+            <input class="interestReviewInput" type="text" name="interestReview" id="interestReview">
+            <p>Location</p>
             <select class="interestLocationInput name="interestLocation id="interestLocation">
                 <option value="1">Italy</option>
                 <option value="2">Switzerland</option>
