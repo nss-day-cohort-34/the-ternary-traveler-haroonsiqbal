@@ -40,6 +40,14 @@
       "review": "Very exciting to watch!",
       "placeId": 3,
       "id": 4
+    },
+    {
+      "name": "St. Mark's Square",
+      "description": "A piazza in Venice",
+      "cost": "€10.00",
+      "review": "It's fun, but watch out for the seagulls!",
+      "placeId": 1,
+      "id": 5
     }
   ]
 }

@@ -26,7 +26,7 @@ body {
 }
 
 #interestsContainer {
-    margin: 20px;
+    margin: 0 auto;
     font-family: 'IBM Plex Sans', sans-serif;
     max-width: 500px;
 
@@ -40,7 +40,7 @@ body {
 h1 {
     font-size: 3em;
     font-family: 'Abril Fatface', cursive;
-    margin-left: 20px;
+    text-align: center;
 }
 
 #legend {
