@@ -1,29 +1,45 @@
 {
-  "places": [],
+  "places": [
+    {
+      "id": 1,
+      "name": "Italy",
+      "visa_required": false
+    },
+    {
+      "id": 2,
+      "name": "Switzerland",
+      "visa_required": true
+    },
+    {
+      "id": 3,
+      "name": "France",
+      "visa_required": false
+    }
+  ],
   "interests": [
     {
       "name": "Il Duomo",
-      "description": "A cathedral in Florence",
+      "description": "A Cathedral in Florence",
       "cost": "€25.00",
-      "review": "It was great!",
-      "location": "Italy",
-      "id": 1
-    },
-    {
-      "name": "The Alps",
-      "description": "A mountain range",
-      "cost": "€40.00",
-      "review": "Great for skiing!",
-      "location": "Switzerland",
+      "review": "It was beautiful!",
+      "placeId": 1,
       "id": 2
     },
     {
-      "name": "Tour De France",
-      "description": "A bicycle race across the country",
-      "cost": "€80.00",
-      "review": "It was exciting!",
-      "location": "France",
+      "name": "The Alps",
+      "description": "A mountain range in Europe",
+      "cost": "€40.00",
+      "review": "Great for skiing!",
+      "placeId": 2,
       "id": 3
+    },
+    {
+      "name": "Tour De France",
+      "description": "A bicycle race throughout the country",
+      "cost": "€80.00",
+      "review": "Very exciting to watch!",
+      "placeId": 3,
+      "id": 4
     }
   ]
 }

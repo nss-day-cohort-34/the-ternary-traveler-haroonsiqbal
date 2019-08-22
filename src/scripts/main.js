@@ -38,7 +38,7 @@ interests.addEventListener("click", event => {
           interestDescription.value,
           interestCost.value,
           interestReview.value,
-          interestLocation,
+          parseInt(interestLocation.value),
         );
         editEntry(hiddenEditId.value, updatedObject).then(() => {
           postsContainer.innerHTML = "";
@@ -51,6 +51,11 @@ interests.addEventListener("click", event => {
               domInterest.renderToPostsContainer(postedInterestConverted);
             }
           });
+          interestName.value = ""
+          interestDescription.value = ""
+          interestCost.value = ""
+          interestReview.value = ""
+          interestLocation.value = ""
         });
       } else {
         const newInterest = factoryInterest.createJSON(
@@ -58,7 +63,7 @@ interests.addEventListener("click", event => {
           interestDescription.value,
           interestCost.value,
           interestReview.value,
-          interestLocation.value
+          parseInt(interestLocation.value)
         );
         console.log(newInterest);
         fetch("http://localhost:8088/interests", {
@@ -78,6 +83,11 @@ interests.addEventListener("click", event => {
             }
           });
         });
+        interestName.value = ""
+        interestDescription.value = ""
+        interestCost.value = ""
+        interestReview.value = ""
+        interestLocation.value = ""
       }
     }
   });

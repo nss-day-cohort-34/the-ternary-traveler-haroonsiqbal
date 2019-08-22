@@ -26,9 +26,9 @@ const factoryInterest = {
             <label for="interestReview">Review</label>
             <input class="interestReviewInput" type="text" name="interestReview" id="interestReview"><br>
             <select class="interestLocationInput name="interestLocation id="interestLocation">
-                <option value="Italy">Italy</option>
-                <option value="Switzerland">Switzerland</option>
-                <option value="France">France</option>
+                <option value="1">Italy</option>
+                <option value="2">Switzerland</option>
+                <option value="3">France</option>
             </select>
         </fieldset>
         <div>
@@ -37,13 +37,13 @@ const factoryInterest = {
         `
       },
 
-    createJSON(name, description, cost, review, location) {
+    createJSON(name, description, cost, review, placeId) {
         return {
             name: name,
             description: description,
             cost: cost,
             review: review,
-            location: location
+            placeId: placeId
           }
     },
 
@@ -54,7 +54,7 @@ const factoryInterest = {
         <h5>Description: ${object.description}</h5>
         <h5>Cost: ${object.cost}</h5>
         <h5>Review: ${object.review}</h5>
-        <h5>Location: ${object.location}</h5>
+        <h5>Location: ${object.place.name}</h5>
         <div>
         <button class="button2" id="editButton--${object.id}">Edit</button>
         </div>
